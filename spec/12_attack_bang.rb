@@ -9,7 +9,9 @@ describe Robot do
 
   describe "#attack!" do
     it "should deal damage to enemy robots" do
-      @robot.attack(@enemy)
+      11.times do
+        @robot.attack(@enemy)
+      end
       expect(@enemy.health).to eq(95)
     end
 
